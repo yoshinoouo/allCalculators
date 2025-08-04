@@ -1,0 +1,127 @@
+@import url(/port04/css/reset.css);
+
+:root{
+    --bg-color: #1E1E2E;
+    --header-bg: #2C3E50;
+    --menu-bg: #2A2A3C;
+    --menu-hover: #3A3A4E;
+    --text-color: #FFFFFF;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: var(--bg-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+header{
+    background-color: var(--header-bg);
+    color: var(--text-color);
+    height: 70px;
+    padding: 0 20px;
+
+    /* flex 左右分 上下置中 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* i或logo */
+header i{
+    font-size: 50px;
+}
+
+/* 右側類型 flex 平均分 */
+header .menu{
+    display: flex;
+    gap: 20px;
+}
+
+/* 類型屬性 */
+header .menu li{
+    background-color: var(--menu-bg);
+    width: 150px;
+    padding: 10px 20px;
+    text-align: center;
+
+    /* cursor 鼠標類型 */
+    cursor: pointer;
+
+    /* 定位 母 */
+    position: relative;
+
+    /* 圓角 */
+    border-radius: 5px;
+
+    /* 動畫 bgc time 變化速度 */
+    transition: background-color 0.2s ease;
+}
+
+/* .menu 觸碰 */
+header .menu li:hover{
+    background-color: var(--menu-hover);
+}
+
+/* 連結 tdn db */
+header .menu a{
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+}
+
+/* 下拉選單 定位 子 定位點 上100% 左0 dn */
+/* 之後做動畫 */
+header .dropdown{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 100px;
+    z-index: 100;
+    display: none;
+}
+
+/* .menu 觸碰後下拉 db */
+header .menu li:hover .dropdown{
+    display: block;
+}
+
+/* main */
+main{
+    flex: 1;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+main h2{
+    font-size: 60px;
+    padding: 20px;
+}
+
+main p{
+    font-size: 20px;
+}
+
+/* footer */
+footer{
+    height: 30px;
+    text-align: center;
+    color: var(--text-color);
+    background-color: var(--menu-hover);
+    line-height: 30px;
+}
+
+
+
+
+
+
+
