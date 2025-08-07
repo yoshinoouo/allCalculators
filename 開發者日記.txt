@@ -1,0 +1,18 @@
+2025/08/06 0307
+    變更ouo.css var變數的位置 移動到var.css
+    變更header footer 的css 模組化到layout.css
+    變更header 的html 模組化到header.html
+    變更footer 的html 模組化到footer.html
+    新增csript 叫出header.html footer.html
+    新增APY.html 增加一些內容等明天繼續更新
+
+2025/08/08 0058
+    拆分ouo.css 拆分為mainhome.css page.css
+    變更ouo.css名稱 改為mainhome.css 作為主首頁的css
+    新增page.css 內容為html跟body
+    新增htmlmod cssmod資料夾 將mod分類
+    移動layout.css page.css reset.css var.css到cssmod
+    移動header.html footer.html到htmlmod
+    增加APY.html的內容 目前已寫完75%
+    新增APY.css 目前已寫完60%
+    

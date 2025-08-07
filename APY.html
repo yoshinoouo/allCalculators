@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>年化計算機</title>
+    <link rel="stylesheet" href="/port04/cssmod/reset.css">
+    <link rel="stylesheet" href="/port04/cssmod/var.css">
+    <link rel="stylesheet" href="/port04/cssmod/layout.css">
+    <link rel="stylesheet" href="/port04/cssmod/page.css">
+    <link rel="stylesheet" href="/port04/css/APY.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <!-- 計算區塊 -->
+    <div class="mainCalculator">
+
+        <!-- 大標題 -->
+        <section>
+            <h2>年化計算機</h2>
+        </section>
+
+        <!-- 外框 -->
+        <div class="main-display">
+
+            <!-- 左 文字框 -->
+            <div class="text-display">
+                你說的「放文字還有計算區的」應該是指一個區塊，上面有標題，中間有輸入欄，下面有顯示結果的區域對吧？這種情況，我幫你整理一組清楚語意又好維護的 class 命名範例，適合用在像是計算機、轉換器、表單等等。
+            </div>
+
+            <!-- 右 計算框 -->
+            <div class="calc-display">
+
+                <!-- 輸入框 -->
+                <ul class="input-display">
+                    <li class="input-field">
+                        <section class="in-sec">
+                            <label for="input-text1">輸入1</label>
+                            <input type="text" >
+                        </section>
+                    </li>
+
+                    <li class="input-field">
+                        <section class="in-sec">
+                            <label for="input-text1">輸入1</label>
+                            <input type="text" >
+                        </section>
+                    </li>
+
+                    <li class="input-field">
+                        <section class="in-sec">
+                            <label for="input-text1">輸入1</label>
+                            <input type="text" >
+                        </section>
+                    </li>
+
+                    <li class="input-field">
+                        <section class="in-sec">
+                            <label for="input-text1">輸入1</label>
+                            <input type="text" >
+                        </section>
+                    </li>
+
+                    <li class="input-field">
+                        <section class="in-sec">
+                            <label for="input-text1">輸入1</label>
+                            <input type="text" >
+                        </section>
+                    </li>
+
+                </ul>
+
+                <!-- 輸出框 -->
+                <ul class="output-display">
+                    <li class="output-field">
+                        <section>
+                            <label for="output-text1">輸出1</label>
+                            <input type="text" >
+                        </section>
+                    </li>
+
+                    <li class="output-field">
+                        <section>
+                            <label for="output-text1">輸出2</label>
+                            <input type="text" >
+                        </section>
+                    </li>
+
+                    <li class="output-field">
+                        <section>
+                            <label for="output-text1">輸出3</label>
+                            <input type="text" >
+                        </section>
+                    </li>
+
+                    <li class="output-field">
+                        <section>
+                            <label for="output-text1">輸出4</label>
+                            <input type="text" >
+                        </section>
+                    </li>
+
+                    <!-- <li class="output-field">
+                        <section>
+                            <label for="output-text1">輸出5</label>
+                            <input type="text" >
+                        </section>
+                    </li>
+
+                    <li class="output-field">
+                        <section>
+                            <label for="output-text1">輸出6</label>
+                            <input type="text" >
+                        </section>
+                    </li> -->
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+
+    <script>
+        //讓layout.html的header footer顯示
+        fetch("../htmlmod/header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("../htmlmod/footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+
+    </script>
+</body>
+</html>

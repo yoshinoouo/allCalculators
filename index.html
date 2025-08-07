@@ -4,55 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>各種類型計算機</title>
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="ouo.css">
+    <link rel="stylesheet" href="/port04/cssmod/reset.css">
+    <link rel="stylesheet" href="/port04/cssmod/var.css">
+    <link rel="stylesheet" href="/port04/cssmod/layout.css">
+    <link rel="stylesheet" href="/port04/cssmod/page.css">
+    <link rel="stylesheet" href="/port04/css/mainhome.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
-
 </head>
+
 <body>
-    <header>
-            <!-- i或logo -->
-            <figure>
-                <i class="fa-solid fa-calculator"></i>
-            </figure>
-
-            <!-- 不同類型計算機 -->
-            <section>
-                <!-- li 可以新增新的計算類型 EX:
-                    <li>類型名稱
-                        <ul class="dropdown">
-                            <li><a href="#">計算機名稱</a></li>
-                        </ul>
-                    </li>
-                -->
-                        <!-- 加入這類型的計算機 EX:
-                            <li><a href="#">計算機名稱</a></li> 
-                        -->
-                <ul class="menu">
-                    <li>一般計算
-                        <ul class="dropdown">
-                            <li><a href="#">計算計算計算</a></li>
-                            <li><a href="#">計算計算計算</a></li>
-                        </ul>
-                    </li>
-
-                    <li>經濟計算
-                        <ul class="dropdown">
-                            <li><a href="#">計算計算計算</a></li>
-                            <li><a href="#">計算計算計算</a></li>
-                        </ul>
-                    </li>
-
-                    <li>遊戲計算
-                        <ul class="dropdown">
-                            <li><a href="#">計算計算計算</a></li>
-                            <li><a href="#">計算計算計算</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-            <!-- 之後新增淺色&深色主題 -->
-    </header>
+    
+    <div id="header"></div>
     
     <main>
         <section>
@@ -61,15 +23,18 @@
         </section>
     </main>
 
-    <footer>
-        <section>
-            © 2025 yoshinoouo. 可自由使用 | <a href="https://github.com/yoshinoouo" target="_blank"><i class="fa-brands fa-github"></i></a>
-        </section>
-    </footer>
+    <div id="footer"></div>
+
+    <script>
+        //讓layout.html的header footer顯示
+        fetch("htmlmod/header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("htmlmod/footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+
+    </script>
 </body>
-
 </html>
-
-
-
-
