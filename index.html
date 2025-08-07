@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>各種類型計算機</title>
+    <link rel="stylesheet" href="/port04/cssmod/reset.css">
+    <link rel="stylesheet" href="/port04/cssmod/var.css">
+    <link rel="stylesheet" href="/port04/cssmod/layout.css">
+    <link rel="stylesheet" href="/port04/cssmod/page.css">
+    <link rel="stylesheet" href="/port04/css/mainhome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<body>
+    
+    <div id="header"></div>
+    
+    <main>
+        <section>
+            <h2>各種類型計算機</h2>
+            <p>有各種遊戲、經濟跟普通的計算機</p>
+        </section>
+    </main>
+
+    <div id="footer"></div>
+
+    <script>
+        //讓layout.html的header footer顯示
+        fetch("htmlmod/header.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("header").innerHTML = data);
+
+        fetch("htmlmod/footer.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("footer").innerHTML = data);
+
+    </script>
+</body>
+</html>
